@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Details - GameScope</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/game-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <h1>GameScope</h1>
+                    </a>
+                </div>
+                <button id="themeToggle" class="theme-toggle">
+                    <span class="moon">🌙</span>
+                    <span class="sun">☀️</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="game-details">
+            <div id="loadingSpinner" class="loading-spinner"></div>
+            
+            <div id="gameContent" class="hidden">
+                <div class="game-header">
+                    <div class="game-cover">
+                        <img id="gameImage" src="" alt="Game Cover">
+                    </div>
+                    <div class="game-info">
+                        <h1 id="gameName"></h1>
+                        <div class="game-meta">
+                            <div class="rating">
+                                <span>⭐</span>
+                                <span id="gameRating"></span>
+                            </div>
+                            <div class="release-date">
+                                <span>📅</span>
+                                <span id="releaseDate"></span>
+                            </div>
+                            <div class="platforms" id="platforms"></div>
+                        </div>
+                        <div class="game-description" id="gameDescription"></div>
+                    </div>
+                </div>
+
+                <div class="game-details-grid">
+                    <section class="requirements">
+                        <h2>System Requirements</h2>
+                        <div class="requirements-content">
+                            <div class="requirements-card minimum">
+                                <div class="requirements-header">
+                                    <h3>Minimum Requirements</h3>
+                                    <span class="requirements-icon">⚙️</span>
+                                </div>
+                                <div id="minRequirements" class="requirements-list"></div>
+                            </div>
+                            <div class="requirements-card recommended">
+                                <div class="requirements-header">
+                                    <h3>Recommended Requirements</h3>
+                                    <span class="requirements-icon">🚀</span>
+                                </div>
+                                <div id="recRequirements" class="requirements-list"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="screenshots">
+                        <h2>Screenshots</h2>
+                        <div class="screenshots-grid" id="screenshots"></div>
+                    </section>
+
+                    <section class="recommendations">
+                        <h2>Recommended Games</h2>
+                        <div class="recommendations-grid" id="recommendations"></div>
+                    </section>
+
+                    <section class="reviews">
+                        <h2>Reviews</h2>
+                        <div class="reviews-container" id="reviews"></div>
+                        <form id="reviewForm" class="review-form">
+                            <h3>Write a Review</h3>
+                            <div class="rating-input">
+                                <label>Rating:</label>
+                                <div class="star-rating">
+                                    <span data-rating="1">⭐</span>
+                                    <span data-rating="2">⭐</span>
+                                    <span data-rating="3">⭐</span>
+                                    <span data-rating="4">⭐</span>
+                                    <span data-rating="5">⭐</span>
+                                </div>
+                            </div>
+                            <textarea id="reviewText" placeholder="Write your review here..."></textarea>
+                            <button type="submit">Submit Review</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/game-details.js"></script>
+</body>
+</html> 

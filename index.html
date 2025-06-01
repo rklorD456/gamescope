@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameScope - Game Reviews & Ratings</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <h1>GameScope</h1>
+                    <p>Your Ultimate Game Review Platform</p>
+                </div>
+                <button id="themeToggle" class="theme-toggle">
+                    <span class="moon">🌙</span>
+                    <span class="sun">☀️</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search games...">
+                        <button id="searchButton">Search</button>
+                    </div>
+                </div>
+
+                <div class="filters">
+                    <h3>Filters</h3>
+                    
+                    <div class="filter-group">
+                        <label>Sort By</label>
+                        <select id="sortSelect" class="filter-select">
+                            <option value="-rating">Rating</option>
+                            <option value="-released">Release Date</option>
+                            <option value="-metacritic">Metacritic Score</option>
+                            <option value="name">Name</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Platform</label>
+                        <select id="platformSelect" class="filter-select">
+                            <option value="">All Platforms</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Genre</label>
+                        <select id="genreSelect" class="filter-select">
+                            <option value="">All Genres</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Year</label>
+                        <select id="yearSelect" class="filter-select">
+                            <option value="">All Years</option>
+                        </select>
+                    </div>
+
+                    <button id="applyFilters" class="apply-filters">Apply Filters</button>
+                </div>
+            </aside>
+
+            <main class="content">
+                <div id="loadingSpinner" class="loading-spinner hidden"></div>
+                
+                <section id="searchResults" class="games-grid hidden">
+                    <h2>Search Results</h2>
+                    <div class="games-container"></div>
+                </section>
+
+                <section id="trendingGames" class="games-grid">
+                    <h2>Trending Games</h2>
+                    <div class="games-container"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 

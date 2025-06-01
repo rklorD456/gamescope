@@ -1,0 +1,298 @@
+.game-details {
+    padding: 2rem 0;
+}
+
+.game-header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.game-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.game-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.game-meta > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.platforms {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.platforms span {
+    background-color: var(--secondary-bg);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+.game-description {
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.game-details-grid {
+    display: grid;
+    gap: 3rem;
+}
+
+/* Requirements Section */
+.requirements-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.requirements-card {
+    background-color: var(--secondary-bg);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.requirements-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.requirements-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.requirements-header h3 {
+    margin: 0;
+    color: var(--accent);
+    font-size: 1.25rem;
+}
+
+.requirements-icon {
+    font-size: 1.5rem;
+}
+
+.requirements-list {
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.requirement-item {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: var(--primary-bg);
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+}
+
+.requirement-item:last-child {
+    margin-bottom: 0;
+}
+
+.requirement-item strong {
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.requirement-item span {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+/* Recommendations Section */
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.recommendation-card {
+    background-color: var(--secondary-bg);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-4px);
+}
+
+.recommendation-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.recommendation-card-content {
+    padding: 1rem;
+}
+
+.recommendation-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.recommendation-card .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--accent);
+    font-size: 0.875rem;
+}
+
+/* Screenshots Section */
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.screenshots-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.screenshots-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Reviews Section */
+.reviews-container {
+    margin: 1rem 0 2rem;
+}
+
+.review-card {
+    background-color: var(--secondary-bg);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.review-rating {
+    color: var(--accent);
+}
+
+.review-form {
+    background-color: var(--secondary-bg);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.review-form h3 {
+    margin-bottom: 1rem;
+}
+
+.rating-input {
+    margin-bottom: 1rem;
+}
+
+.star-rating {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.star-rating span {
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.star-rating span:hover {
+    transform: scale(1.2);
+}
+
+.star-rating span.active {
+    color: var(--accent);
+}
+
+.review-form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--border);
+    border-radius: 0.5rem;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    resize: vertical;
+}
+
+.review-form button {
+    background-color: var(--accent);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.review-form button:hover {
+    opacity: 0.9;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .game-header {
+        grid-template-columns: 1fr;
+    }
+
+    .game-cover {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .requirements-content {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendations-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+} 
